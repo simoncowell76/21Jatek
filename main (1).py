@@ -1,9 +1,11 @@
 import random
+def huzas():
+    return random.randint(2, 11) + random.randint(2, 11)
 jatekos = input("Kivel szeretnél játszani (emberrel/géppel)? ")
 if jatekos == "géppel":
     print("Játékosok száma: 1 (Te vs Gép)")
-    jatekosLap = random.randint(2, 11) + random.randint(2, 11)
-    gepLap = random.randint(2, 11) + random.randint(2, 11)
+    jatekosLap = huzas()
+    gepLap = huzas() 
 
     print("A te lapjaid összértéke:", jatekosLap)
     print("A gép lapjainak összértéke:", gepLap)
@@ -19,8 +21,8 @@ if jatekos == "géppel":
         print("Döntetlen!")
 elif jatekos == "emberrel":
     print("Játékosok száma: 2 (Játékos1 vs Játékos2)")
-    jatekos1 = random.randint(2, 11) + random.randint(2, 11)
-    jatekos2 = random.randint(2, 11) + random.randint(2, 11)
+    jatekos1 = huzas()
+    jatekos2 = huzas()
 
     print("Játékos1 lapjainak összértéke:", jatekos1)
     print("Játékos2 lapjainak összértéke:", jatekos2)
